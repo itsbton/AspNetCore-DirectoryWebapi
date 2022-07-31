@@ -15,6 +15,10 @@ namespace DirectoryWebApi.Controllers
                 esds = new
                 {
                     href = Url.Link(nameof(EsdsController.GetEsds), null)
+                },
+                districts  = new
+                {
+                    href = Url.Link(nameof(DistrictsController.GetDistricts), null)
                 }
             };
 

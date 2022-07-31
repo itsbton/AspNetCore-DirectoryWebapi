@@ -554,7 +554,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TEMP.CORP\\.nuget\\packages\\": {}
+    "D:\\Users\\brenton\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -562,11 +562,11 @@
       "projectUniqueName": "D:\\Net Core\\DirectoryWebApi\\DirectoryWebApi\\DirectoryWebApi.csproj",
       "projectName": "DirectoryWebApi",
       "projectPath": "D:\\Net Core\\DirectoryWebApi\\DirectoryWebApi\\DirectoryWebApi.csproj",
-      "packagesPath": "C:\\Users\\TEMP.CORP\\.nuget\\packages\\",
+      "packagesPath": "D:\\Users\\brenton\\.nuget\\packages\\",
       "outputPath": "D:\\Net Core\\DirectoryWebApi\\DirectoryWebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\TEMP.CORP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "D:\\Users\\brenton\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -9,5 +9,6 @@ namespace DirectoryWebApi
         public DirectoryApiDbContext(DbContextOptions options) : base(options) { }
 
         public DbSet<EsdEntity> Esds { get; set; }
+        public DbSet<DistrictEntity> Districts { get; set; }
     }
 }
