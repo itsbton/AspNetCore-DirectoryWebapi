@@ -23,7 +23,7 @@ namespace DirectoryWebApi
         public static async Task AddTestData(DirectoryApiDbContext context)
         {
             //Already has data, should probably bail
-            if (context.Esds.Any() || context.Districts.Any())
+            if (context.Esds.Any() || context.Districts.Any() || context.Schools.Any())
             {
                 return;
             }
@@ -91,6 +91,54 @@ namespace DirectoryWebApi
                 EsdCode = "34801",
                 EsdName = "Capital Region ESD 113",
 
+            });
+
+            context.Schools.Add(new SchoolEntity
+            {
+                Id = 1,
+                Code = "3075",
+                Name = "Washtucna Elementary/High School",
+                AddressLine1 = "730 East Booth Avenue",
+                AddressLine2 = "",
+                State = "Washington",
+                ZipCode = "99371-0688",
+                Phone = "509.646.3211",
+                Email = "vwing@tucna.wednet.edu",
+                City = "Washtucna",
+                PrincipalName = "Vance Wing",
+                LowestGrade = "PK",
+                HighestGrade = "12",
+                AypCode = "P",
+                GradeCategory = "PK-12",
+                OrgCategoryList = "Public School, Regular School",
+                EsdCode = "32801",
+                EsdName = "Educational Service District 101",
+                LeaCode = "01109",
+                LeaName = "Washtucna School District"
+            });
+
+            context.Schools.Add(new SchoolEntity
+            {
+                Id = 2,
+                Code = "3142",
+                Name = "Benge Elementary",
+                AddressLine1 = "2978 E. Benge-Winona Rd.",
+                AddressLine2 = "",
+                State = "Washington",
+                ZipCode = "99105-0697",
+                Phone = "",
+                Email = "",
+                City = "Benge",
+                PrincipalName = "",
+                LowestGrade = "K",
+                HighestGrade = "6",
+                AypCode = "P",
+                GradeCategory = "Elementary School",
+                OrgCategoryList = "Public School, Regular School",
+                EsdCode = "32801",
+                EsdName = "Educational Service District 101",
+                LeaCode = "01122",
+                LeaName = "Benge School District"
             });
 
             await context.SaveChangesAsync();

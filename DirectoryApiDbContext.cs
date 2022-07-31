@@ -10,5 +10,6 @@ namespace DirectoryWebApi
 
         public DbSet<EsdEntity> Esds { get; set; }
         public DbSet<DistrictEntity> Districts { get; set; }
+        public DbSet<SchoolEntity> Schools { get; set; }
     }
 }

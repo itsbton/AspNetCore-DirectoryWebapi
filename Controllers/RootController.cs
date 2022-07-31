@@ -19,6 +19,10 @@ namespace DirectoryWebApi.Controllers
                 districts  = new
                 {
                     href = Url.Link(nameof(DistrictsController.GetDistricts), null)
+                },
+                schools = new
+                {
+                    href = Url.Link(nameof(SchoolsController.GetSchools),null)
                 }
             };
 
